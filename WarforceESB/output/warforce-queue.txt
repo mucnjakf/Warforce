@@ -1,0 +1,142 @@
+Getting all platoons - Platoons count: 4
+
+Getting platoon: PlatoonDto(id=1, name=Platoon 2, commander=Pero markioc, location=Location 2, operators=[PlatoonOperatorDto(id=202, firstName=John, lastName=Doe, dateOfBirth=1990-01-01T00:00, gender=Male), PlatoonOperatorDto(id=203, firstName=John, lastName=Doe, dateOfBirth=1990-01-01T00:00, gender=Male), PlatoonOperatorDto(id=2, firstName=123John123, lastName=123Doe123, dateOfBirth=1998-01-01T00:00, gender=Other)])
+
+Created platoon: PlatoonDto(id=352, name=Platoon 1, commander=Pero peric, location=Location 1, operators=[])
+
+Updated platoon: PlatoonDto(id=352, name=Platoon 2, commander=Pero markioc, location=Location 2, operators=[])
+
+Getting all operators - Operators count: 5
+
+Getting operator: OperatorDto(id=1, firstName=filip, lastName=mucnjak, dateOfBirth=1997-04-05T00:00, gender=Other, platoon=OperatorPlatoonDto(id=52, name=Platoon 1, commander=Pero peric, location=Location 1))
+
+Created operator: OperatorDto(id=352, firstName=Joe, lastName=Doe, dateOfBirth=2017-01-13T00:00, gender=Male, platoon=OperatorPlatoonDto(id=1, name=Platoon 2, commander=Pero markioc, location=Location 2))
+
+Updated operator: OperatorDto(id=352, firstName=test, lastName=testic, dateOfBirth=2000-01-13T00:00, gender=Female, platoon=OperatorPlatoonDto(id=52, name=Platoon 1, commander=Pero peric, location=Location 1))
+
+Deleted operator with ID: 352
+
+Getting all operators - Operators count: 5
+
+Getting all operators - Operators count: 5
+
+Getting all operators - Operators count: 5
+
+Getting all operators - Operators count: 5
+
+Getting all operators - Operators count: 5
+
+Getting all operators - Operators count: 5
+
+Getting all operators - Operators count: 5
+
+Getting all operators - Operators count: 5
+
+Getting all operators - Operators count: 5
+
+Getting all operators - Operators count: 5
+
+Getting operator: OperatorDto(id=1, firstName=filip, lastName=mucnjak, dateOfBirth=1997-04-05T00:00, gender=Other, platoon=OperatorPlatoonDto(id=52, name=Platoon 1, commander=Pero peric, location=Location 1))
+
+Getting operator: OperatorDto(id=1, firstName=filip, lastName=mucnjak, dateOfBirth=1997-04-05T00:00, gender=Other, platoon=OperatorPlatoonDto(id=52, name=Platoon 1, commander=Pero peric, location=Location 1))
+
+Getting all operators - Operators count: 5
+
+Getting all operators - Operators count: 5
+
+Getting all platoons - Platoons count: 5
+
+Getting platoon: PlatoonDto(id=1, name=Platoon 2, commander=Pero markioc, location=Location 2, operators=[PlatoonOperatorDto(id=202, firstName=John, lastName=Doe, dateOfBirth=1990-01-01T00:00, gender=Male), PlatoonOperatorDto(id=203, firstName=John, lastName=Doe, dateOfBirth=1990-01-01T00:00, gender=Male), PlatoonOperatorDto(id=2, firstName=123John123, lastName=123Doe123, dateOfBirth=1998-01-01T00:00, gender=Other)])
+
+Getting operator: OperatorDto(id=1, firstName=filip, lastName=mucnjak, dateOfBirth=1997-04-05T00:00, gender=Other, platoon=OperatorPlatoonDto(id=52, name=Platoon 1, commander=Pero peric, location=Location 1))
+
+Getting all platoons - Platoons count: 5
+
+Getting all operators - Operators count: 5
+
+Getting platoon: PlatoonDto(id=1, name=Platoon 2, commander=Pero markioc, location=Location 2, operators=[PlatoonOperatorDto(id=202, firstName=John, lastName=Doe, dateOfBirth=1990-01-01T00:00, gender=Male), PlatoonOperatorDto(id=203, firstName=John, lastName=Doe, dateOfBirth=1990-01-01T00:00, gender=Male), PlatoonOperatorDto(id=2, firstName=123John123, lastName=123Doe123, dateOfBirth=1998-01-01T00:00, gender=Other)])
+
+Getting all operators - Operators count: 5
+
+Getting platoon: PlatoonDto(id=1, name=Platoon 2, commander=Pero markioc, location=Location 2, operators=[PlatoonOperatorDto(id=202, firstName=John, lastName=Doe, dateOfBirth=1990-01-01T00:00, gender=Male), PlatoonOperatorDto(id=203, firstName=John, lastName=Doe, dateOfBirth=1990-01-01T00:00, gender=Male), PlatoonOperatorDto(id=2, firstName=123John123, lastName=123Doe123, dateOfBirth=1998-01-01T00:00, gender=Other)])
+
+Getting all operators - Operators count: 5
+
+Getting operator: OperatorDto(id=1, firstName=filip, lastName=mucnjak, dateOfBirth=1997-04-05T00:00, gender=Other, platoon=OperatorPlatoonDto(id=52, name=Platoon 1, commander=Pero peric, location=Location 1))
+
+Getting platoon: PlatoonDto(id=1, name=Platoon 2, commander=Pero markioc, location=Location 2, operators=[PlatoonOperatorDto(id=202, firstName=John, lastName=Doe, dateOfBirth=1990-01-01T00:00, gender=Male), PlatoonOperatorDto(id=203, firstName=John, lastName=Doe, dateOfBirth=1990-01-01T00:00, gender=Male), PlatoonOperatorDto(id=2, firstName=123John123, lastName=123Doe123, dateOfBirth=1998-01-01T00:00, gender=Other)])
+
+Getting all platoons - Platoons count: 5
+
+Getting all platoons - Platoons count: 5
+
+Created platoon: PlatoonDto(id=402, name=test, commander=sdas, location=qwe, operators=[])
+
+Updated platoon: PlatoonDto(id=402, name=qwe, commander=asd, location=qwe, operators=[])
+
+Deleted platoon with ID: 402
+
+Getting all operators - Operators count: 5
+
+Getting all platoons - Platoons count: 5
+
+Created operator: OperatorDto(id=402, firstName=tyu, lastName=ghj, dateOfBirth=2024-02-02T00:00, gender=Male, platoon=OperatorPlatoonDto(id=1, name=Platoon 2, commander=Pero markioc, location=Location 2))
+
+Updated operator: OperatorDto(id=402, firstName=uio, lastName=uio, dateOfBirth=2024-02-02T00:00, gender=Female, platoon=OperatorPlatoonDto(id=52, name=Platoon 1, commander=Pero peric, location=Location 1))
+
+Deleted operator with ID: 402
+
+Getting all operators - Operators count: 5
+
+Getting all operators - Operators count: 5
+
+Getting operator: OperatorDto(id=1, firstName=filip, lastName=mucnjak, dateOfBirth=1997-04-05T00:00, gender=Other, platoon=OperatorPlatoonDto(id=52, name=Platoon 1, commander=Pero peric, location=Location 1))
+
+Created operator: OperatorDto(id=403, firstName=John, lastName=Doe, dateOfBirth=1990-01-01T00:00, gender=Male, platoon=OperatorPlatoonDto(id=1, name=Platoon 2, commander=Pero markioc, location=Location 2))
+
+Updated operator: OperatorDto(id=403, firstName=123John123, lastName=123Doe123, dateOfBirth=1998-01-01T00:00, gender=Other, platoon=OperatorPlatoonDto(id=1, name=Platoon 2, commander=Pero markioc, location=Location 2))
+
+Deleted operator with ID: 403
+
+Getting all platoons - Platoons count: 5
+
+Created platoon: PlatoonDto(id=452, name=test, commander=test, location=test, operators=[])
+
+Updated platoon: PlatoonDto(id=452, name=test123, commander=test123, location=test123, operators=[])
+
+Deleted platoon with ID: 452
+
+Getting all operators - Operators count: 5
+
+Getting all platoons - Platoons count: 5
+
+Created operator: OperatorDto(id=452, firstName=qwe, lastName=asd, dateOfBirth=2024-02-01T00:00, gender=Male, platoon=OperatorPlatoonDto(id=1, name=Platoon 2, commander=Pero markioc, location=Location 2))
+
+Updated operator: OperatorDto(id=452, firstName=qwe123, lastName=asd123, dateOfBirth=2024-02-04T00:00, gender=Male, platoon=OperatorPlatoonDto(id=52, name=Platoon 1, commander=Pero peric, location=Location 1))
+
+Updated operator: OperatorDto(id=452, firstName=qwe123, lastName=asd123, dateOfBirth=2024-02-04T00:00, gender=Male, platoon=OperatorPlatoonDto(id=152, name=test123, commander=recomanded22, location=relocated221))
+
+Deleted operator with ID: 452
+
+Getting platoon: PlatoonDto(id=1, name=Platoon 2, commander=Pero markioc, location=Location 2, operators=[PlatoonOperatorDto(id=202, firstName=John, lastName=Doe, dateOfBirth=1990-01-01T00:00, gender=Male), PlatoonOperatorDto(id=203, firstName=John, lastName=Doe, dateOfBirth=1990-01-01T00:00, gender=Male), PlatoonOperatorDto(id=2, firstName=123John123, lastName=123Doe123, dateOfBirth=1998-01-01T00:00, gender=Other)])
+
+Getting all platoons - Platoons count: 5
+
+Created platoon: PlatoonDto(id=453, name=test123, commander=test comander, location=lokacija, operators=[])
+
+Updated platoon: PlatoonDto(id=453, name=test, commander=test comander, location=lokacija, operators=[])
+
+Deleted platoon with ID: 453
+
+Getting all operators - Operators count: 5
+
+Getting all platoons - Platoons count: 5
+
+Created operator: OperatorDto(id=453, firstName=name1, lastName=last name 2, dateOfBirth=2024-02-01T00:00, gender=Male, platoon=OperatorPlatoonDto(id=1, name=Platoon 2, commander=Pero markioc, location=Location 2))
+
+Updated operator: OperatorDto(id=453, firstName=name12, lastName=last name 22, dateOfBirth=2024-02-01T00:00, gender=Male, platoon=OperatorPlatoonDto(id=1, name=Platoon 2, commander=Pero markioc, location=Location 2))
+
+Deleted operator with ID: 453
+
+Getting all operators - Operators count: 5
+

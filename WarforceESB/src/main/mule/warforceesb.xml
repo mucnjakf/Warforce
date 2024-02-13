@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/current/mule-jms.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="2906d786-3ff6-46dd-bb77-179bad9ae18d" >
+		<http:listener-connection host="localhost" port="8081" />
+	</http:listener-config>
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="01b5437c-71a7-42a2-9fd4-2c1220a3c5ee" basePath="/api" >
+		<http:request-connection host="localhost" port="8082" />
+	</http:request-config>
+	<jms:config name="JMS_Config" doc:name="JMS Config" doc:id="5bb18168-d7f8-4f10-b25c-ba159490b991" >
+		<jms:active-mq-connection >
+			<jms:factory-configuration brokerUrl="tcp://localhost:61616" />
+		</jms:active-mq-connection>
+	</jms:config>
+	<flow name="GetOperators" doc:id="59d0aab2-7e16-4c43-9323-8e01cd473476" >
+		<http:listener doc:name="Listener" doc:id="e04a0ac3-808e-45b6-8cfb-7bcc1fc120e3" config-ref="HTTP_Listener_config" path="/get-operators"/>
+		<http:request method="GET" doc:name="Request" doc:id="881e5953-ddb7-4098-b258-b30a5aec5f08" config-ref="HTTP_Request_configuration" path="/operators"/>
+		<file:write doc:name="Write" doc:id="6e5035a5-a16a-4de6-aa52-fbc89acf88c9" path="C:\Users\Filip\Development\Warforce\WarforceESB\output\get-operators-out.json"/>
+	</flow>
+	<flow name="GetOperator" doc:id="bd758c79-cc18-43bb-99bc-6520f93cd5bf" >
+		<http:listener doc:name="Listener" doc:id="01067153-b26e-44d1-a806-bd6e996283f0" config-ref="HTTP_Listener_config" path="/get-operator/{id}"/>
+		<http:request method="GET" doc:name="Request" doc:id="8b330fb4-a33f-424e-ac38-32e14cd687f9" config-ref="HTTP_Request_configuration" path="/operators/{id}">
+			<http:uri-params ><![CDATA[#[{'id': attributes.uriParams.'id'}]]]></http:uri-params>
+		</http:request>
+		<file:write doc:name="Write" doc:id="582b9e24-bbd4-484b-814c-f919952b5bb7" path="C:\Users\Filip\Development\Warforce\WarforceESB\output\get-operator-out.json"/>
+	</flow>
+	<flow name="CreateOperator" doc:id="d0acede3-67ab-4399-a5c6-d687ac231984" >
+		<http:listener doc:name="Listener" doc:id="2791af2c-89c1-45eb-9586-330fe8d5e6fe" config-ref="HTTP_Listener_config" path="/create-operator"/>
+		<http:request method="POST" doc:name="Request" doc:id="4c9c0332-8d4d-4ba1-832e-4b86359bf0d3" config-ref="HTTP_Request_configuration" path="/operators" outputMimeType="application/json">
+		</http:request>
+		<file:write doc:name="Write" doc:id="77f8614b-a71d-465e-865f-57833d599100" path="C:\Users\Filip\Development\Warforce\WarforceESB\output\create-operator-out.json"/>
+	</flow>
+	<flow name="UpdateOperator" doc:id="a152defa-4baf-41c1-bf8e-46d9259353d4" >
+		<http:listener doc:name="Listener" doc:id="4de9c6d8-7f83-4eaa-825f-6aac8be7946d" config-ref="HTTP_Listener_config" path="/update-operator/{id}"/>
+		<http:request method="PUT" doc:name="Request" doc:id="6c1a1427-a437-4ced-9a3f-653cb76d13b3" config-ref="HTTP_Request_configuration" path="/operators/{id}">
+			<http:uri-params ><![CDATA[#[{'id': attributes.uriParams.'id'}]]]></http:uri-params>
+		</http:request>
+		<file:write doc:name="Write" doc:id="7e2a0f7b-da06-4a7d-8e10-5accbba8652d" path="C:\Users\Filip\Development\Warforce\WarforceESB\output\update-operator-out.json"/>
+	</flow>
+	<flow name="DeleteOperator" doc:id="4a2a7f92-e1c3-415c-810f-0987c58fc841" >
+		<http:listener doc:name="Listener" doc:id="45bfd107-b51b-481a-a90e-2707cbc28540" config-ref="HTTP_Listener_config" path="/delete-operator/{id}"/>
+		<http:request method="DELETE" doc:name="Request" doc:id="110acb8e-b664-4d6a-ac8a-37689a742a6f" config-ref="HTTP_Request_configuration" path="/operators/{id}">
+			<http:uri-params ><![CDATA[#[{'id': attributes.uriParams.'id'}]]]></http:uri-params>
+		</http:request>
+		<file:write doc:name="Write" doc:id="1a6e3c71-a8fa-4925-9f2f-ac220375335f" path="C:\Users\Filip\Development\Warforce\WarforceESB\output\delete-operator-out.json"/>
+	</flow>
+	<flow name="WarforceQueue" doc:id="f479b057-71dc-4e56-85d7-5676bd378cd9" >
+		<jms:listener doc:name="On New Message" doc:id="65410235-8a11-4981-bb20-de57f4dd3a1c" config-ref="JMS_Config" destination="warforce-queue"/>
+		<file:write doc:name="Write" doc:id="4d285a58-c100-4e7b-b920-543823882e9f" path="C:\Users\Filip\Development\Warforce\WarforceESB\output\warforce-queue.txt" mode="APPEND">
+		</file:write>
+	</flow>
+</mule>

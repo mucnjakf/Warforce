@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "firstName": "filip",
+        "lastName": "mucnjak",
+        "dateOfBirth": "1997-04-05T00:00:00",
+        "gender": "Other",
+        "platoon": {
+            "id": 52,
+            "name": "Platoon 1",
+            "commander": "Pero peric",
+            "location": "Location 1"
+        }
+    },
+    {
+        "id": 104,
+        "firstName": "tyu",
+        "lastName": "ghj",
+        "dateOfBirth": "2023-11-05T00:00:00",
+        "gender": "Male",
+        "platoon": {
+            "id": 203,
+            "name": "qwe",
+            "commander": "asd",
+            "location": "zxc"
+        }
+    },
+    {
+        "id": 202,
+        "firstName": "John",
+        "lastName": "Doe",
+        "dateOfBirth": "1990-01-01T00:00:00",
+        "gender": "Male",
+        "platoon": {
+            "id": 1,
+            "name": "Platoon 2",
+            "commander": "Pero markioc",
+            "location": "Location 2"
+        }
+    },
+    {
+        "id": 203,
+        "firstName": "John",
+        "lastName": "Doe",
+        "dateOfBirth": "1990-01-01T00:00:00",
+        "gender": "Male",
+        "platoon": {
+            "id": 1,
+            "name": "Platoon 2",
+            "commander": "Pero markioc",
+            "location": "Location 2"
+        }
+    },
+    {
+        "id": 2,
+        "firstName": "123John123",
+        "lastName": "123Doe123",
+        "dateOfBirth": "1998-01-01T00:00:00",
+        "gender": "Other",
+        "platoon": {
+            "id": 1,
+            "name": "Platoon 2",
+            "commander": "Pero markioc",
+            "location": "Location 2"
+        }
+    }
+]

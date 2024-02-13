@@ -1,0 +1,13 @@
+{
+    "id": 403,
+    "firstName": "John",
+    "lastName": "Doe",
+    "dateOfBirth": "1990-01-01T00:00:00",
+    "gender": "Male",
+    "platoon": {
+        "id": 1,
+        "name": "Platoon 2",
+        "commander": "Pero markioc",
+        "location": "Location 2"
+    }
+}
