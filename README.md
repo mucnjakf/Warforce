@@ -1,33 +1,36 @@
 # Warforce
 
-Military Personnel Management Web Application - 2023.
+Military Personnel Management Desktop Application - 2023.
 
 ---
 
 ### **Overview**
-Warforce is a desktop application for managing military operators and their platoons.
+Warforce is a desktop application tailored for military operations, empowering users to efficiently manage military operators and their platoons. With Warforce, commanders can oversee personnel and assign them to platoons.
 
 ---
 
 ### **Tech Stack**
-- Java 11 FX
-- Spring Boot
-- JPA & Hibernate
-- Lombok
-- ActiveMQ
-- Mule ESB
-- jBPM
-- Maven
-- PostgreSQL
+- Frontend
+    - Java 11 FX
+- Backend
+  - Java 11 Spring Boot
+  - JPA & Hibernate
+  - Lombok
+  - ActiveMQ
+  - Mule ESB
+  - jBPM
+  - Maven
+- Database
+  - PostgreSQL
 
 ---
 
 ### **Tools**
-- Source Control: JetBrains Space
+- Source Control: GitHub
 - IDE: IntelliJ IDEA
 - UI Designer: Scene Builder
 - ESB Designer: Anypoint Studio
-- API Tester: Postman
+- API Client: Postman
 - RDBMS: DataGrip
 
 ---
