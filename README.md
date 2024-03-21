@@ -1,4 +1,4 @@
-# <img src="warforce.png" width="25"/> Warforce
+# <img src="warforce.svg" width="25"/> Warforce
 
 ### **👁️ Overview**
 Military Personnel Management Desktop Application - 2023.
