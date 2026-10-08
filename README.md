@@ -4,7 +4,7 @@
 Military Personnel Management Desktop Application - 2023.
 
 <p align="justify">
-  Warforce is a desktop application tailored for military operations, empowering users to efficiently manage military operators and their platoons. With Warforce, commanders can oversee personnel and assign them to platoons.
+  Warforce is a desktop application tailored for military operations, empowering users to efficiently manage military operators and their platoons. With Warforce, commanders can oversee personnel and coordinate operations with ease.
 </p>
 
 #
@@ -22,13 +22,3 @@ Military Personnel Management Desktop Application - 2023.
   - Maven
 - Database
   - PostgreSQL
-
-#
-
-### **🛠️ Tools**
-- Source Control: GitHub
-- IDE: IntelliJ IDEA
-- UI Designer: Scene Builder
-- ESB Designer: Anypoint Studio
-- API Client: Postman
-- RDBMS: DataGrip
